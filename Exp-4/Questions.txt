@@ -1,0 +1,5 @@
+1) create a form to accept regno , name and marks in their different subjects validation using js minimum marks should be 0 and maximum marks should be 50
+2)design a form which contains some mandatory and some optional entities and validate it
+3)write a program in js to display prime nos 
+4)write a program in js to prompt for a no and display all its factors
+5)find the product of two numbers without using multiplication and any mathmatics symbols

@@ -1,0 +1,7 @@
+Q1. Write HTML code to create a home page having three links : About us, Our Services and Contact us. 
+Create three different web pages for using anchor tags
+
+Q2. write an HTML code to design your University website.
+Q3. write an HTML code to demonistrate inline CSS (Style attribute)
+Q4. write an HTML code to demonistrate internal CSS ( <Style> ).
+Q5. write an HTML code to demonistrate external CSS ( .css files)

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Record Form</h2>
+        <form id="studentForm">
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small id="nameError"></small>
+
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" placeholder="Enter roll number">
+            <small id="rollError"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <small id="emailError"></small>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter phone number">
+            <small id="phoneError"></small>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+            <small id="dobError"></small>
+
+            <label for="department">Department:</label>
+            <select id="department" aria-label="Department">
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="ME">ME</option>
+            </select>
+            <small id="deptError"></small>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+1) Design a table in JavaScript to store information of 10 students
+2) create a web page that contains an image along with its explanation
+3) write a JavaScript code to enter an array of ten values then create a button to display min, max and sum
+4) Design a function in JS to change background color on mouse click

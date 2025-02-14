@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Pointer Position</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+            text-align: center;
+            color: white;
+        }
+        #position {
+            font-size: 20px;
+            margin-top: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Track Mouse Position</h1>
+    <div id="position">Move your mouse</div>
+
+    <script>
+        $(document).mousemove(function(event) {
+            $("#position").html(`X: ${event.pageX} | Y: ${event.pageY}`);
+        });
+    </script>
+</body>
+</html>

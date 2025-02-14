@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Timing</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+            color: white;
+        }
+        p {
+            font-size: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #timeDiff {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Paragraph to Measure Time Difference</h1>
+    <p id="clickPara">Click me!</p>
+    <div id="timeDiff">Time between clicks: 0 ms</div>
+
+    <script>
+        let lastClickTime = 0;
+        $("#clickPara").click(function() {
+            let currentTime = new Date().getTime();
+            if (lastClickTime !== 0) {
+                let diff = currentTime - lastClickTime;
+                $("#timeDiff").text(`Time between clicks: ${diff} ms`);
+            }
+            lastClickTime = currentTime;
+        });
+    </script>
+</body>
+</html>

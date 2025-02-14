@@ -7,27 +7,34 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
-            background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+            background: #000428ef;
             color: white;
         }
         p {
-            font-size: 20px;
+            font-size: 22px;
             padding: 15px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
             display: inline-block;
             cursor: pointer;
             border-radius: 10px;
+            transition: 0.3s;
+        }
+        p:hover {
+            background: rgba(255, 255, 255, 0.2);
         }
         #timeDiff {
-            font-size: 22px;
+            font-size: 26px;
             margin-top: 20px;
+            font-weight: bold;
+            color: #ffeb3b;
+            text-shadow: 0px 0px 10px rgba(255, 235, 59, 0.8);
         }
     </style>
 </head>
 <body>
-    <h1>Click the Paragraph to Measure Time Difference</h1>
+    <h1>Measure Click Timing</h1>
     <p id="clickPara">Click me!</p>
     <div id="timeDiff">Time between clicks: 0 ms</div>
 

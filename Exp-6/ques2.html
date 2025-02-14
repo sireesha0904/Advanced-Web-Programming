@@ -7,40 +7,63 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background: #2E073F;
+            color: white;
             text-align: center;
-            background: linear-gradient(45deg, #1c92d2, #f2fcfe);
         }
-        .panel {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            display: none;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            padding-top: 60px;
+            transition: 0.5s;
+            box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        .sidebar a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.2);
         }
         button {
+            margin-top: 20px;
             padding: 10px 20px;
             font-size: 18px;
-            background: #d41872;
+            background: #6200ea;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #8e24aa;
         }
     </style>
 </head>
 <body>
-    <button id="togglePanel">Slide Toggle</button>
-    <div class="panel">
-        <h2>Sliding Panel</h2>
-        <p>This panel appears and disappears with a slide effect.</p>
+    <button id="toggleSidebar">Toggle Sidebar</button>
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </div>
 
     <script>
         $(document).ready(function() {
-            $("#togglePanel").click(function() {
-                $(".panel").slideToggle(500);
+            $("#toggleSidebar").click(function() {
+                let sidebar = $(".sidebar");
+                sidebar.css("left") === "0px" ? sidebar.css("left", "-250px") : sidebar.css("left", "0px");
             });
         });
     </script>

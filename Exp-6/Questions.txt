@@ -1,0 +1,4 @@
+1)write jquery code to give some effect to a page
+2)write jquery code to demonstrate sliding effect
+3)write jquery code to display position of mouse pointer relative to top and left edge of the document
+4)count the number of milliseconds between two chick events on a paragraph

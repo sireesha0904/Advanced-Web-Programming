@@ -1,0 +1,4 @@
+1) Write jQuery Code to demonstrate double click event. 
+2) write jQuery code that displays alert when mouse enters to a particular section and leaves it.
+3) write jQuery code to fade color of a portion upto some extent.
+4) Animate an object using jQuery

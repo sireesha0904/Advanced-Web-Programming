@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse-enter-leave</title>
+     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="section" id="hoverSection">
+        Hover over this section
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#hoverSection').mouseenter(function() {
+                alert('Mouse entered the section!');
+            }).mouseleave(function() {
+                alert('Mouse left the section!');
+            });
+        });
+    </script>
+</body>
+</html>
